@@ -5,10 +5,10 @@ import { BsFillMoonStarsFill } from 'react-icons/bs';
 
 const NavBar = () => {
     return (
-    <main className='px-10'>
+    <main>
         <section>
-            <nav className='py-10 mb-12'>
-                <ul className='flex items-center'>
+            <nav className='py-7 px-10'>
+                <ul className='flex justify-between items-center'>
                     <li className='cursor-pointer'>
                         <BsFillMoonStarsFill/>
                     </li>
