@@ -1,5 +1,5 @@
 "use client";
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import { cn } from "@/lib/utils";
 import Link from "next/link";
@@ -27,6 +27,15 @@ export const PinContainer = ({
   const onMouseLeave = () => {
     setTransform("translate(-50%,-50%) rotateX(0deg) scale(1)");
   };
+
+  const [isClient, setIsClient] = useState(false);
+
+  // Asegúrate de que el componente solo interactúe con el DOM en el cliente
+  useEffect(() => {
+    setIsClient(true);
+  }, []);
+
+  if (!isClient) return null;
 
   return (
     <Link

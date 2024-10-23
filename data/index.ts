@@ -1,8 +1,8 @@
 export const navItems = [
-    { name: "About", link: "#about" },
-    { name: "Projects", link: "#projects" },
-    { name: "Testimonials", link: "#testimonials" },
-    { name: "Contact", link: "#contact" },
+    { name: "Sobre mi", link: "#about" },
+    { name: "Proyectos", link: "#projects" },
+    { name: "Experiencia", link: "#experience" },
+    { name: "Contacto", link: "#contact" },
   ];
   
   export const gridItems = [
@@ -18,7 +18,7 @@ export const navItems = [
     },
     {
       id: 2,
-      title: "Nivel de inglés adecuado para entornos internacionales.",
+      title: "Inglés C2 para entornos internacionales.",
       description: "",
       className: "lg:col-span-2 md:col-span-3 md:row-span-2",
       imgClassName: "",
@@ -74,7 +74,7 @@ export const navItems = [
       id: 1,
       title: "Woofer - Dale aventuras a tus animales",
       des: "¿Quieres pasear a tu mascota pero no tienes tiempo? Woofer se encarga de ayudarte.",
-      img: "/p1.svg",
+      img: "/woofer.png",
       iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/fm.svg"],
       link: "https://woofer-taupe.vercel.app/",
     },
@@ -82,7 +82,7 @@ export const navItems = [
       id: 2,
       title: "PetMatch - Adopta mascotas facilmente",
       des: "¿Necesitas adoptar una mascota? Ven y adopta con PetMatch, encontrarás miles de animalitos buscando un hogar",
-      img: "/p2.svg",
+      img: "/petmatch.png",
       iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/stream.svg", "/c.svg"],
       link: "https://c19-24-m-react.onrender.com",
     },
@@ -90,7 +90,7 @@ export const navItems = [
       id: 3,
       title: "Skilltrade - Intercambia habilidades",
       des: "Intercambia habilidades con otras personas en lugar de usar dinero, expande tus conocimientos y aprende nuevas cosas.",
-      img: "/p3.svg",
+      img: "/skilltrade.png",
       iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/c.svg"],
       link: "https://skill-trade-front.vercel.app/",
     },
@@ -98,104 +98,38 @@ export const navItems = [
       id: 4,
       title: "EventMap - Planifica y optimiza tus rutas",
       des: "¿Eres conductor de Uber, Cabify o Didi? Con EventMap verás zonas de alta demanda para maximizar tus ganancias (Solo para teléfonos celulares)",
-      img: "/p4.svg",
+      img: "/eventmap.png",
       iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/three.svg", "/gsap.svg"],
       link: "https://eventmap-mvp.vercel.app/",
-    },
-  ];
-  
-  export const testimonials = [
-    {
-      quote:
-        "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-      name: "Michael Johnson",
-      title: "Director of AlphaStream Technologies",
-    },
-    {
-      quote:
-        "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-      name: "Michael Johnson",
-      title: "Director of AlphaStream Technologies",
-    },
-    {
-      quote:
-        "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-      name: "Michael Johnson",
-      title: "Director of AlphaStream Technologies",
-    },
-    {
-      quote:
-        "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-      name: "Michael Johnson",
-      title: "Director of AlphaStream Technologies",
-    },
-    {
-      quote:
-        "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-      name: "Michael Johnson",
-      title: "Director of AlphaStream Technologies",
-    },
-  ];
-  
-  export const companies = [
-    {
-      id: 1,
-      name: "cloudinary",
-      img: "/cloud.svg",
-      nameImg: "/cloudName.svg",
-    },
-    {
-      id: 2,
-      name: "appwrite",
-      img: "/app.svg",
-      nameImg: "/appName.svg",
-    },
-    {
-      id: 3,
-      name: "HOSTINGER",
-      img: "/host.svg",
-      nameImg: "/hostName.svg",
-    },
-    {
-      id: 4,
-      name: "stream",
-      img: "/s.svg",
-      nameImg: "/streamName.svg",
-    },
-    {
-      id: 5,
-      name: "docker.",
-      img: "/dock.svg",
-      nameImg: "/dockerName.svg",
     },
   ];
   
   export const workExperience = [
     {
       id: 1,
-      title: "Frontend Engineer Intern",
-      desc: "Assisted in the development of a web-based platform using React.js, enhancing interactivity.",
+      title: "Líder técnico Frontend",
+      desc: "Coordiné un equipo de desarrolladores front end, asignando tareas y supervisando el progreso",
       className: "md:col-span-2",
       thumbnail: "/exp1.svg",
     },
     {
       id: 2,
-      title: "Mobile App Dev - JSM Tech",
-      desc: "Designed and developed mobile app for both iOS & Android platforms using React Native.",
-      className: "md:col-span-2", // change to md:col-span-2
+      title: "Desarrollador Backend",
+      desc: "Asistí en la creación de modelos de usuarios, endpoints y protección de datos, teniendo un gran impacto.",
+      className: "md:col-span-2",
       thumbnail: "/exp2.svg",
     },
     {
       id: 3,
-      title: "Freelance App Dev Project",
-      desc: "Led the dev of a mobile app for a client, from initial concept to deployment on app stores.",
-      className: "md:col-span-2", // change to md:col-span-2
+      title: "Pasante desarrollador Frontend",
+      desc: "Obtuve una pasantía como desarrollador Frontend, optimizando código y realizando estilos responsive",
+      className: "md:col-span-2",
       thumbnail: "/exp3.svg",
     },
     {
       id: 4,
-      title: "Lead Frontend Developer",
-      desc: "Developed and maintained user-facing features using modern frontend technologies.",
+      title: "Integración de APIs",
+      desc: "Coordiné la integración de APIs de terceros para la autenticación y el envío de correos mediante Nodemailer.",
       className: "md:col-span-2",
       thumbnail: "/exp4.svg",
     },
@@ -205,13 +139,11 @@ export const navItems = [
     {
       id: 1,
       img: "/git.svg",
+      link: "https://github.com/fhuayller"
     },
     {
       id: 2,
-      img: "/twit.svg",
-    },
-    {
-      id: 3,
       img: "/link.svg",
+      link: "https://www.linkedin.com/in/franco-huayller-a80087235"
     },
   ];
